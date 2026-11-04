@@ -47,94 +47,78 @@ SAVE_DIR.mkdir(exist_ok=True)
 # ==================================================
 
 
+
 st.markdown("""
 <style>
-/* 메인 배경 */
+/* 전체 배경 */
 .stApp,
-section.main,
-div[data-testid="stAppViewContainer"] {
-    background-color: #F5F8FC !important;
+[data-testid="stAppViewContainer"],
+[data-testid="stMain"] {
+    background-color: #FFFFFF !important;
 }
 
-/* 메인 화면의 기본 글씨 */
-section.main p,
-section.main span,
-section.main label,
-section.main li,
-section.main div,
-section.main h1,
-section.main h2,
-section.main h3 {
-    color: #243B53 !important;
-}
-
-/* 제목 */
-section.main h1,
-section.main h2,
-section.main h3,
-.main-title {
-    color: #123B66 !important;
-    font-weight: 800 !important;
+/* 메인 화면 글씨 전부 검은색 */
+[data-testid="stMain"] * {
+    color: #000000 !important;
 }
 
 /* 메인 제목 */
 .main-title {
+    color: #000000 !important;
     font-size: 36px;
+    font-weight: 800;
 }
 
-/* 사이드바 디자인 유지 */
+/* 모든 제목 */
+h1, h2, h3, h4 {
+    color: #000000 !important;
+}
+
+/* 사이드바 흰색 */
 section[data-testid="stSidebar"] {
-    background-color: #262630 !important;
+    background-color: #FFFFFF !important;
+    border-right: 1px solid #DDDDDD;
 }
 
+/* 사이드바 글씨 검은색 */
 section[data-testid="stSidebar"] * {
-    color: #FFFFFF !important;
+    color: #000000 !important;
 }
 
 /* 지표 카드 */
-div[data-testid="stMetric"] {
-    background-color: #FFFFFF !important;
-    border: 1px solid #C9D9EA !important;
+[data-testid="stMetric"] {
+    background-color: #F5F5F5 !important;
+    border: 1px solid #DDDDDD !important;
     padding: 18px !important;
     border-radius: 12px !important;
 }
 
-/* 지표 이름 */
-div[data-testid="stMetricLabel"],
-div[data-testid="stMetricLabel"] * {
-    color: #52677F !important;
-}
-
-/* 지표 숫자 */
-div[data-testid="stMetricValue"],
-div[data-testid="stMetricValue"] * {
-    color: #145A91 !important;
-}
-
 /* 입력창 */
-.stTextInput input,
-.stTextArea textarea {
+input, textarea {
     background-color: #FFFFFF !important;
-    color: #172B4D !important;
+    color: #000000 !important;
+    border: 1px solid #999999 !important;
 }
 
 /* 버튼 */
 .stButton button,
 .stFormSubmitButton button {
-    background-color: #1769AA !important;
-    color: #FFFFFF !important;
+    background-color: #EEEEEE !important;
+    color: #000000 !important;
+    border: 1px solid #999999 !important;
 }
 
 /* 안내 상자 */
-div[data-testid="stAlert"] {
-    background-color: #E7F1FC !important;
+[data-testid="stAlert"] {
+    background-color: #F0F0F0 !important;
 }
 
-div[data-testid="stAlert"] * {
-    color: #17365D !important;
+[data-testid="stAlert"] * {
+    color: #000000 !important;
 }
 </style>
 """, unsafe_allow_html=True)
+
 
 
 
