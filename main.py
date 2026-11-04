@@ -51,31 +51,7 @@ st.markdown("""
 .stApp {
     background-color: #F6F9FE;
 }
-
-.main-title {
-    color: #174A7E;
-    font-size: 36px;
-    font-weight: 800;
-}
-
-section[data-testid="stSidebar"] {
-    background-color: #EAF2FC;
-}
-
-div[data-testid="stMetric"] {
-    background-color: white;
-    border: 1px solid #DCE8F5;
-    padding: 18px;
-    border-radius: 12px;
-}
-
-div[data-testid="stMetricValue"] {
-    color: #174A7E;
-}
-
-h2, h3 {
-    color: #245B91;
-}
+...
 </style>
 """, unsafe_allow_html=True)
 
