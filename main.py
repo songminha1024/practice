@@ -46,14 +46,96 @@ SAVE_DIR.mkdir(exist_ok=True)
 # 2. 디자인 설정
 # ==================================================
 
+
 st.markdown("""
 <style>
-.stApp {
-    background-color: #F6F9FE;
+/* 메인 배경 */
+.stApp,
+section.main,
+div[data-testid="stAppViewContainer"] {
+    background-color: #F5F8FC !important;
 }
-...
+
+/* 메인 화면의 기본 글씨 */
+section.main p,
+section.main span,
+section.main label,
+section.main li,
+section.main div,
+section.main h1,
+section.main h2,
+section.main h3 {
+    color: #243B53 !important;
+}
+
+/* 제목 */
+section.main h1,
+section.main h2,
+section.main h3,
+.main-title {
+    color: #123B66 !important;
+    font-weight: 800 !important;
+}
+
+/* 메인 제목 */
+.main-title {
+    font-size: 36px;
+}
+
+/* 사이드바 디자인 유지 */
+section[data-testid="stSidebar"] {
+    background-color: #262630 !important;
+}
+
+section[data-testid="stSidebar"] * {
+    color: #FFFFFF !important;
+}
+
+/* 지표 카드 */
+div[data-testid="stMetric"] {
+    background-color: #FFFFFF !important;
+    border: 1px solid #C9D9EA !important;
+    padding: 18px !important;
+    border-radius: 12px !important;
+}
+
+/* 지표 이름 */
+div[data-testid="stMetricLabel"],
+div[data-testid="stMetricLabel"] * {
+    color: #52677F !important;
+}
+
+/* 지표 숫자 */
+div[data-testid="stMetricValue"],
+div[data-testid="stMetricValue"] * {
+    color: #145A91 !important;
+}
+
+/* 입력창 */
+.stTextInput input,
+.stTextArea textarea {
+    background-color: #FFFFFF !important;
+    color: #172B4D !important;
+}
+
+/* 버튼 */
+.stButton button,
+.stFormSubmitButton button {
+    background-color: #1769AA !important;
+    color: #FFFFFF !important;
+}
+
+/* 안내 상자 */
+div[data-testid="stAlert"] {
+    background-color: #E7F1FC !important;
+}
+
+div[data-testid="stAlert"] * {
+    color: #17365D !important;
+}
 </style>
 """, unsafe_allow_html=True)
+
 
 
 # ==================================================
